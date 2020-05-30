@@ -17,3 +17,16 @@ for (let y in nums)
     }
     console.log(`${y} = ${nums[y]}`)
 }
+
+externo:
+for (a in nums)
+{
+    for (b in nums)
+    {
+        if (a == 2 && b == 3)
+        {
+            break externo
+        }        
+        console.log(`Par = ${a}, ${b}`)
+    }
+}
