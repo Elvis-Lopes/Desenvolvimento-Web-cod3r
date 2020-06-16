@@ -9,11 +9,10 @@ const prod2 = {
 }
 
 // Factory simples
-function criarPessoa()
+function criarPessoa(nome, sobrenome)
 {
-    return
-    {
-        nome: 'Ana',
-        sobrenome: 'Silva'
+    return{
+        nome: nome,
+        sobrenome: sobrenome
     }
 }
