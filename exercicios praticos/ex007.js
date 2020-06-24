@@ -17,7 +17,7 @@ function bhaskara (a, b, c){
         x2 = (-1*b)-Math.sqrt(delta)/2*a
         res.push(x1)
         res.push(x2)
-
+        
         return console.log(res)
     }
 }
