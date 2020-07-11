@@ -1,4 +1,4 @@
-/*Construir um algoritmo que calcule a média aritmética dos valores de um vetor de inteiros. */
+/*Construir um algoritmo que calcule a média aritmética dos valores de um vetor de inteiros.*/
 
 function mediaDeValores(vetor){
     soma = 0
@@ -12,3 +12,4 @@ function mediaDeValores(vetor){
 
 vetor = [1, 2, 3, 4, 5]
 console.log(mediaDeValores(vetor))
+
