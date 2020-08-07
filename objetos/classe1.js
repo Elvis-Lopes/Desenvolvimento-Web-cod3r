@@ -21,6 +21,7 @@ class CicloFinanceiro{
         this.lancamentos.forEach(l =>{
             valorConsolidado += l.valor
         })
+        return valorConsolidado
     }
 }
 
