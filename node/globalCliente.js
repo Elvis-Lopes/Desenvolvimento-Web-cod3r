@@ -2,5 +2,5 @@ require('./global')
 
 console.log(MinhaApp.saudacao())
 
-MinhaApp.nome = 'Eit!'
+MinhaApp.nome = 'Eita!'
 console.log(MinhaApp.nome)
