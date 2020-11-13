@@ -28,3 +28,18 @@ function retornarValor(){
         setTimeout(() => resolve(10), 5000)
     })
 }
+
+function gerarMegaSena(qtdNumeros){
+        try{
+        const numeros = []
+        for(let _ of Array(qtdNumeros).fill()){
+            numeros.push(await gerarNumerosEntre(1, 60, numeros))
+        }
+    }catch(e){
+        throw "Que chato!!!"
+    }
+}
+
+gerarMegaSena(8)
+    .then(console.log)
+    .catch(console.log)
