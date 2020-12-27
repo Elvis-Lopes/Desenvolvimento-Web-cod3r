@@ -7,23 +7,24 @@
 </head>
 <body>
     <header>
-        Exercicios HTML
+        <h1>Exercicios HTML</h1>
     </header>
     <nav>
-        <a wm-nav href="exercicios/teste.html">00 - Teste</a>
+        <a href="exercicios/teste.html">00 - Teste</a><br>
+        <a href="exercicios/texto1.html">01 - Texto 1</a>
     </nav>
     <section id="conteudo"></section>
     <footer>
         <br>
-        Curso de Web Moderno
+        Curso de Web  Moderno
     </footer>
-    
     <script>
-        document.querySelectorAll('wm-nav').forEach(link => {
+        document.querySelectorAll('a').forEach(link => {
             const conteudo = document.getElementById('conteudo')
+
             link.onclick = function(e){
                 e.preventDefault()
-                fetch(link.getAttribute('wm-nav'))
+                fetch(link.href)
                     .then(resp => resp.text())
                     .then(html => conteudo.innerHTML = html)
             }
